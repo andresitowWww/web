@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardar Proyecto</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Guardar Proyecto de Investigación</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario para Crear Proyecto</h2>
+      <!-- Formulario que permite la subida de archivos, usando enctype="multipart/form-data" -->
+      <form action="guardarproyectos.php" method="POST" enctype="multipart/form-data">
+        <label for="project-title">Título del Proyecto</label>
+        <input type="text" id="project-title" name="project-title" required>
+
+        <label for="project-description">Descripción</label>
+        <textarea id="project-description" name="project-description" rows="4" required></textarea>
+
+        <label for="project-file">Archivo del Proyecto (opcional)</label>
+        <input type="file" id="project-file" name="project-file">
+
+        <button type="submit">Guardar Proyecto</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
